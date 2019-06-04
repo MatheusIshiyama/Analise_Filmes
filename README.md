@@ -24,8 +24,13 @@ Vendo o log de valores pelo pandas usando o codigo
     plt.style.use("ggplot")
     print(filmes['country'].unique())
 
-## Remover colunas desnecessarias
+## Removendo colunas desnecessarias
 
     // removendo essas colunas da lista "colunas"
     colunas=['budget','gross', 'rating', 'company', 'released','director', 'name', 'runtime', 'star', 'votes', 'writer']
     filmes.drop(columns=colunas, inplace=True)
+
+## Listando colunas para verificacao de integridade de dados
+
+    filmes.columns
+
