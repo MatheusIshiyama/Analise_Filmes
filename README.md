@@ -1,4 +1,4 @@
-# Analise_de_Filmes
+# Analise de Filmes
 
 Dados adquiridos no site da "Kaggle", na pasta "Movie industry"
 
@@ -24,4 +24,8 @@ Vendo o log de valores pelo pandas usando o codigo
     plt.style.use("ggplot")
     print(filmes['country'].unique())
 
+## Remover colunas desnecessarias
 
+    // removendo essas colunas da lista "colunas"
+    colunas=['budget','gross', 'rating', 'company', 'released','director', 'name', 'runtime', 'star', 'votes', 'writer']
+    filmes.drop(columns=colunas, inplace=True)
