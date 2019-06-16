@@ -42,4 +42,9 @@ Vendo o log de valores pelo pandas usando o codigo
 ## Analisando os valores de cada pais
 
     print(filmes['country'].value_counts().nlargest(10))
-    filmes['country'].value_counts().nlargest(10).plot(kind='bar' , subplots=True, label="", title="Países que mais produziram filmes em     três décadas", figsize=(7,6))
+    
+    filmes['country'].value_counts().nlargest(10).plot(kind='bar' , subplots=True, label="", title="Países que mais produziram filmes em três décadas", figsize=(7,6))
+    
+ 
+ 
+ Usando isso como base, montamos todos os 3 graficos.
