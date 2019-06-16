@@ -34,3 +34,8 @@ Vendo o log de valores pelo pandas usando o codigo
 
     filmes.columns
 
+## Verificando quais paises produzem mais filmes
+
+    plt.style.use("ggplot")
+    print(filmes['country'].unique())
+    
